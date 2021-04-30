@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class HelloTest {
 
-    @RequestMapping(path = "/hello",params = {"name"})
+    @PostMapping(path = "/hello",params = {"name"})
     public String hello(){
         System.out.println("入门成功");
         return "success";
@@ -33,5 +33,10 @@ public class HelloTest {
         System.out.println("testForm");
         System.out.println(person);
         return person1;
+    }
+    @PostMapping("ss")
+    public void xx(){
+        System.out.println("sdsddddd");
+
     }
 }

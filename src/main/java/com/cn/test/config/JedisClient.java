@@ -38,6 +38,7 @@ public class JedisClient {
     }
 
     public String get(String key){
+
         Jedis jedis=getJedis();
         String value = null;
         try{
